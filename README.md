@@ -167,5 +167,8 @@ Esto te dará la información de los pods y servicios creados. El servicio de ti
 
 Puedes entrar a tu sitio así: `http://<EXTERNAL-IP>` o `https://<EXTERNAL-IP>`
 
-También puedes ver detalles (pods, servicios) de tu despliegue [aquí](https://console.cloud.google.com/kubernetes/workload) seleccionando tu despliegue.
+También puedes [ver detalles (pods, servicios) de tu despliegue aquí](https://console.cloud.google.com/kubernetes/workload) seleccionando tu despliegue.
+
+Para ver las IP addresses que asignan a tus servicios [puedes entrar aquí](https://console.cloud.google.com/networking/addresses/list).
+En misma página puedes reservar IP estatico para tu projecto.
 
