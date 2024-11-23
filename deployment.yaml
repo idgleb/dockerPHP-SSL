@@ -1,19 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: php-app
+  name: php-ssl-app-deployment
+  labels:
+    app: php-ssl-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: php-app
+      app: php-ssl-app
   template:
     metadata:
       labels:
-        app: php-app
+        app: php-ssl-app
     spec:
       containers:
-        - name: php-app
-          image: gcr.io/intense-vault-442413-d0/php_img:latest
+        - name: php-ssl-cont-app
+          image: gcr.io/intense-vault-442413-d0/img-php-ssl:v1
           ports:
             - containerPort: 80
+            - containerPort: 443
